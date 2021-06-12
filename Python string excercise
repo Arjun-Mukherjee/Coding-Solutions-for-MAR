@@ -1,0 +1,12 @@
+Problem:- Given two strings, s1 and s2, create a new string by appending s2 in the middle of s1
+          Given, s1="Ault" s2="Kelly" . Expected Output:- AuKellyt
+
+Python 3 code:-
+
+def appendMiddle(s1, s2):
+  middleIndex = int(len(s1) /2)
+  print("Original Strings are", s1, s2)
+  middleThree = s1[:middleIndex:]+ s2 +s1[middleIndex:]
+  print("After appending new string in middle", middleThree)
+  
+appendMiddle("Ault", "Kelly")
